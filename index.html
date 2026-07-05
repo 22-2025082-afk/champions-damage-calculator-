@@ -15,7 +15,6 @@
 
 <main>
 
-    <!-- 攻撃側 -->
     <section class="card">
         <h2>攻撃側</h2>
 
@@ -36,10 +35,8 @@
         <select id="attackerItem">
             <option value="">なし</option>
         </select>
-
     </section>
 
-    <!-- 防御側 -->
     <section class="card">
         <h2>防御側</h2>
 
@@ -60,10 +57,8 @@
         <select id="defenderItem">
             <option value="">なし</option>
         </select>
-
     </section>
 
-    <!-- 技 -->
     <section class="card">
         <h2>技</h2>
 
@@ -72,36 +67,39 @@
             <option value="">選択してください</option>
         </select>
 
-        <label>急所</label>
-        <input id="critical" type="checkbox">
+        <label>
+            <input id="critical" type="checkbox">
+            急所
+        </label>
 
-        <label>タイプ一致(STAB)</label>
-        <input id="stab" type="checkbox" checked>
-
+        <label>
+            <input id="stab" type="checkbox" checked>
+            タイプ一致（STAB）
+        </label>
     </section>
 
-    <!-- ボタン -->
     <section class="card center">
-
         <button id="calculateButton">
             ダメージ計算
         </button>
-
     </section>
 
-    <!-- 結果 -->
     <section class="card">
-
         <h2>計算結果</h2>
 
         <div id="result">
             ダメージを計算してください
         </div>
-
     </section>
 
 </main>
 
+<!-- データ -->
+<script src="data/types.js"></script>
+<script src="data/pokemon.js"></script>
+<script src="data/moves.js"></script>
+
+<!-- メイン処理 -->
 <script src="script.js"></script>
 
 </body>
