@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Champions ダメージ計算機</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Pokémon Champions ダメージ計算機</h1>
+</header>
+
+<main>
+
+    <!-- 攻撃側 -->
+    <section class="card">
+        <h2>攻撃側</h2>
+
+        <label>ポケモン</label>
+        <select id="attackerPokemon">
+            <option value="">選択してください</option>
+        </select>
+
+        <label>レベル</label>
+        <input id="attackerLevel" type="number" value="50" min="1" max="100">
+
+        <label>特性</label>
+        <select id="attackerAbility">
+            <option value="">選択してください</option>
+        </select>
+
+        <label>持ち物</label>
+        <select id="attackerItem">
+            <option value="">なし</option>
+        </select>
+
+    </section>
+
+    <!-- 防御側 -->
+    <section class="card">
+        <h2>防御側</h2>
+
+        <label>ポケモン</label>
+        <select id="defenderPokemon">
+            <option value="">選択してください</option>
+        </select>
+
+        <label>レベル</label>
+        <input id="defenderLevel" type="number" value="50" min="1" max="100">
+
+        <label>特性</label>
+        <select id="defenderAbility">
+            <option value="">選択してください</option>
+        </select>
+
+        <label>持ち物</label>
+        <select id="defenderItem">
+            <option value="">なし</option>
+        </select>
+
+    </section>
+
+    <!-- 技 -->
+    <section class="card">
+        <h2>技</h2>
+
+        <label>技</label>
+        <select id="move">
+            <option value="">選択してください</option>
+        </select>
+
+        <label>急所</label>
+        <input id="critical" type="checkbox">
+
+        <label>タイプ一致(STAB)</label>
+        <input id="stab" type="checkbox" checked>
+
+    </section>
+
+    <!-- ボタン -->
+    <section class="card center">
+
+        <button id="calculateButton">
+            ダメージ計算
+        </button>
+
+    </section>
+
+    <!-- 結果 -->
+    <section class="card">
+
+        <h2>計算結果</h2>
+
+        <div id="result">
+            ダメージを計算してください
+        </div>
+
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
